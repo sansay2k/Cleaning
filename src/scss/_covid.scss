@@ -1,0 +1,123 @@
+.section__covid {
+     padding: 30px 0;
+}
+
+.covid {
+     background-color: $darkColor;
+     border-radius: 24px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-right: 70px;
+
+     @media(max-width: 1200px) {
+          flex-wrap: wrap-reverse;
+          justify-content: center;
+          padding-right: 0;
+     }
+
+     &__item {
+          max-width: 50%;
+          width: 50%;
+
+          @media(max-width: 1200px) {
+               width: 100%;
+               max-width: 100%;
+          }
+
+          &_img {
+               width: 100%;
+          }
+     }
+
+     &__item {
+
+          &:nth-child(2) {
+               padding: 0 20px;
+          }
+
+          &_subtitle {
+               margin-top: 10px;
+               color: $whiteColor;
+               text-transform: uppercase;
+               font-weight: 700;
+               font-size: 16px;
+               letter-spacing: 1.6px;
+
+               @media(max-width: 1200px) {
+                    text-align: center;
+                    margin-top: 40px;
+               }
+          }
+
+          &_title {
+               color: $whiteColor;
+               max-width: 495px;
+               margin-top: 17px;
+
+               @media(max-width: 1200px) {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 30px;
+               }
+          }
+
+          &_text {
+               color: $whiteColor;
+               max-width: 475px;
+               font-size: 21px;
+               line-height: 30px;
+               margin-top: 18px;
+
+               @media(max-width: 1200px) {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 30px;
+               }
+          }
+
+          &_wrapper {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 28px;
+               width: 100%;
+               margin-top: 12px;
+
+               @media(max-width: $breakpoint768) {
+                    flex-wrap: wrap;
+               }
+
+          }
+
+          &_btn {
+               &:hover {
+                    background-color: $whiteColor;
+                    color: $darkColor;
+               }
+          }
+
+          &_call {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 10px;
+
+               &-now {
+                    font-size: 16px;
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+               }
+
+               &-num {
+                    margin-top: 3px;
+                    color: $whiteColor;
+
+                    &:hover {
+                         color: $mainColor;
+                    }
+               }
+          }
+     }
+}
